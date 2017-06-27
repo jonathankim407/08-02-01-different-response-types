@@ -1,0 +1,17 @@
+<h1>Books</h1>
+
+<ul class="books">
+  <% @books.each do |book| %>
+    <li class="book">
+      <h1><%= book.title %></h1>
+
+      <dl>
+        <dt>Book ID: <%= book.id %></dt>
+
+        <dt>Book Author: <%= book.author %></dt>
+
+        <dt>Book Already Read: <%= book.already_read %></dt>
+      </dl>
+    </li>
+  <% end %>
+</ul>
